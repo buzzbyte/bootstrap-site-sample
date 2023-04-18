@@ -1,0 +1,24 @@
+{
+  "name": "bootstrap-site-sample",
+  "version": "1.0.0",
+  "description": "A sample site for Boba Tea and Ice Cream written using Bootstrap.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "symlink-dir ./node_modules/bootstrap/dist ./dist/bootstrap",
+    "dev": "reload -b",
+    "start": "sirv --dev"
+  },
+  "keywords": [],
+  "author": "Buzzbyte",
+  "license": "ISC",
+  "dependencies": {
+    "@popperjs/core": "^2.11.7",
+    "bootstrap": "5.3.0-alpha3"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "reload": "^3.2.1",
+    "sirv-cli": "^2.0.2",
+    "symlink-dir": "^5.1.1"
+  }
+}

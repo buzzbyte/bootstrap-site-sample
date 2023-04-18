@@ -1,0 +1,26 @@
+:root {
+    --bs-primary: var(--bs-orange);
+}
+
+.bg-purple {
+    background-color: var(--bs-purple);
+    color: var(--bs-white)
+}
+
+#landing-hero1 {
+    background: url('../images/BUBBLE_TEA-21_1400x1400.png') no-repeat;
+    background-size: contain;
+    background-position: center 15em;
+}
+
+@media (min-width: 768px) {
+    #landing-hero1 {
+        background-position: right 10em;
+    }
+}
+
+@media (min-width: 992px) {
+    #landing-hero1 {
+        background-position: right bottom;
+    }
+}
