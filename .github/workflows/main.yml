@@ -55,8 +55,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       
-      - name: Build (symlink dirs)
-        run: pnpm build
+      - name: Build (copy dirs)
+        run: mkdir -p ./dist/ && cp ./node_modules/bootstrap/dist ./dist/bootstrap
       
       - name: Upload pages artifact
         uses: actions/upload-pages-artifact@v1
