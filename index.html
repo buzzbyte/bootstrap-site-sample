@@ -1,80 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creaba Bubble Tea & Ice Cream</title>
-    <link rel="stylesheet" href="/dist/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header class="mb-4 text-white bg-purple bg-gradient">
-        <nav class="navbar navbar-dark navbar-expand-lg bg-transparent">
-            <div class="container">
-                <a class="navbar-brand" href="#">Creaba</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Creaba Bubble Tea & Ice Cream</title>
+        <link rel="stylesheet" href="/dist/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header class="text-white bg-purple bg-gradient">
+            <nav class="navbar navbar-dark navbar-expand-lg bg-transparent">
+                <div class="container">
+                    <a class="navbar-brand" href="#">Creaba</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse d-lg-flex" id="navbarSupportedContent">
+                        <ul class="navbar-nav col mb-2 mb-lg-0 justify-content-lg-center">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="products.html">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#about">About</a>
+                            </li>
+                        </ul>
+                        <div class="d-grid me-auto gap-2 d-lg-flex">
+                            <a class="navbar-btn btn btn-outline-light" href="login.html">Login</a>
+                            <a class="navbar-btn btn btn-primary btn-outline-light" href="register.html">
+                                <strong>Sign Up</strong>
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="container col-xxl-8 px-4 py-5 bg-image" id="landing-hero1">
-            <div class="row flex-lg-row align-items-center g-5 py-5">
-                <div class="col-lg-6">
-                    <h1 class="display-5 fw-bold text-secondary-light lh-1 mb-3">Your Tea,<br>Your Way.</h1>
-                    <p class="lead">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto necessitatibus nobis repudiandae esse aspernatur qui neque, et placeat, facere a voluptatibus perspiciatis, sequi est voluptas quos assumenda ut incidunt totam?
-                    </p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Own it!</button>
-                        <button type="button" class="btn btn-light btn-lg px-4">Check the Menu</button>
+                        </div>
                     </div>
                 </div>
-                <!-- <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="images/BUBBLE_TEA-21_1400x1400.png" class="d-block     mx-lg-auto img-fluid" alt="Bootstrap Themes" width="500" height="500" loading="lazy">
-                </div> -->
+            </nav>
+            <div class="container col-xxl-8 px-4 py-5 bg-image" id="landing-hero1">
+                <div class="row flex-lg-row align-items-center g-5 py-5">
+                    <div class="col-lg-6">
+                        <h1 class="display-5 fw-bold text-secondary-light lh-1 mb-3"><em>your</em> tea<br />the&nbsp;way&nbsp;<em>you</em>&nbsp;want&nbsp;it</h1>
+                        <p class="lead">
+                            Enjoy countless combinations of boba tea and ice cream crafted <em>just</em> for you.<br />
+                            It's time to <em>Own Your Tea!</em>
+                        </p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <a href="" class="btn btn-primary btn-outline-light fw-bold btn-lg px-4 me-md-2">Order Now</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <footer class="py-3 my-4" style="color-scheme: dark;">
-        <div class="container">
-            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
-            </ul>
-            <p class="text-center text-body-secondary">&copy; 2023 Creaba LLC</p>
-        </div>
-    </footer>
+        <main>
+            <section class="container-fluid">
+                <div class="row justify-content-center align-items-md-center">
+                    <div class="col-md-6">
+                        <!-- <img src="images/bubble-tea-g137187917_1280.jpg" alt="" class="mx-auto img-fluid" width="300" height="300" /> -->
+                        <img src="images/tea-g2a37ae631_1280.png" alt="" class="w-100 mx-auto img-fluid" width="300" height="300" />
+                    </div>
+                    <div class="col-md-6 my-auto p-md-5">
+                        <p class="lead">Here to quench your thirst? We got you! From our in-house brewry, we serve what you want, how you want.</p>
+                        <p>From our 20+ boba flavors, and counting, you can choose from and create countless concoctions to your desire. Including:</p>
+                        <ul>
+                            <li>Strawberry Jelly</li>
+                            <li>Grape Jelly</li>
+                            <li>Popping Mango</li>
+                            <li>Popping Banana</li>
+                            <li>Vanilla Chunks</li>
+                            <li>Chocolate Boba</li>
+                            <li><a href="products.html">... and much more!</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
 
+            <section class="container-fluid bg-image home-bg"></section>
 
-    <script src="/dist/bootstrap/js/bootstrap.bundle.min.js"></script>
-</body>
+            <section class="container-fluid container-md py-5">
+                <div class="justify-content-center align-items-md-center">
+                    <h2 id="about">About Us</h2>
+                    <p class="lead">We're an up and coming boba place located in north east coast of the state.</p>
+                    <p>We pride ourselves in providing quality tea combinations created exclusively by our customers to give them what they want, how they want it.</p>
+                    <p>
+                        Recently founded as a startup in the United States, we've been slowly expanding to include more flavors of boba tea and ice cream. Our mission is to provide customized boba tea and ice cream to everyone around the whole world.
+                    </p>
+                </div>
+            </section>
+
+            <section class="container-fluid mx-0 py-5 bg-purple bg-gradient">
+                <div class="text-center justify-content-center align-items-md-center">
+                    <h2 class="mb-4">Tea Raving <em>you'll</em> be Craving</h2>
+                    <a href="products.html" class="btn btn-primary btn-outline-light fw-bold">Order Now</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="py-3 my-4" style="color-scheme: dark">
+            <div class="container">
+                <p class="text-center">
+                    <a href="register.html" class="nav-link px-2 text-body-secondary">Login / Register</a>
+                </p>
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link px-2 text-body-secondary">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link px-2 text-body-secondary">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#faq" class="nav-link px-2 text-body-secondary">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#about" class="nav-link px-2 text-body-secondary">About</a>
+                    </li>
+                </ul>
+                <p class="text-center text-body-secondary">&copy; 2023 Buzzbyte Development</p>
+            </div>
+        </footer>
+
+        <script src="/dist/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>
