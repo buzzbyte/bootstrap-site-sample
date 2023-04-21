@@ -56,7 +56,7 @@ jobs:
         run: pnpm install
       
       - name: Build (copy dirs)
-        run: mkdir -p ./dist/ && cp ./node_modules/bootstrap/dist ./dist/bootstrap
+        run: mkdir -p ./dist/ && cp -r ./node_modules/bootstrap/dist ./dist/bootstrap
       
       - name: Upload pages artifact
         uses: actions/upload-pages-artifact@v1
