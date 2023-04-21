@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Checkout Web Order - Creaba</title>
+        <link rel="stylesheet" href="/dist/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body class="bg-light">
+        <header class="text-white bg-purple bg-gradient">
+            <nav class="navbar navbar-dark navbar-expand-lg bg-transparent">
+                <div class="container">
+                    <a class="navbar-brand" href="inde">Creaba</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse d-lg-flex" id="navbarSupportedContent">
+                        <ul class="navbar-nav col mb-2 mb-lg-0 justify-content-lg-center">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="products.html">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#about">About</a>
+                            </li>
+                        </ul>
+                        <div class="d-grid me-auto gap-2 d-lg-flex">
+                            <a class="navbar-btn btn btn-outline-light" href="login.html">Login</a>
+                            <a class="navbar-btn btn btn-primary btn-outline-light" href="register.html">
+                                <strong>Sign Up</strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="container col-xxl-8 px-4 py-5 bg-image">
+                <h1 class="display-5 fw-bold text-secondary-light text-center">Our Special-Teas and Ice Cream</h1>
+            </div>
+        </header>
+
+        <main class="bg-light">
+            <div class="container mt-5 px-lg-5">
+                <div class="row mb-4">
+                    <div class="col">
+                        <h2>Menu</h2>
+                    </div>
+                    <div class="col justify-content-end text-end">
+                        <a href="checkout.html" class="btn btn-primary">Checkout</a>
+                    </div>
+                </div>
+                <div class="menu-cards row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 row-cols-xxxl-5 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Free badge-->
+                            <div class="badge bg-gradient text-white position-absolute" style="top: 0.5rem; right: 0.5rem; background-color: rgb(167, 72, 255)">FREE</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="images/pexels-telly-mina-12666754.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body pt-4 pb-2">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder text-center">Complementary Creaba&#8209;T</h5>
+                                <p class="card-text">Our homemade special milk tea with ice cream toppings and tapioca boba. Free for a limited time!</p>
+                            </div>
+                            <!-- Product price-->
+                            <ul class="list-group list-group-flush my-2 text-center">
+                                <li class="list-group-item" style="font-weight: 600">Free <span class="text-muted fst-italic fw-normal">on first purchase of any item</span></li>
+                            </ul>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-2 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-primary mt-auto" href="checkout.html">Order Now</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="images/boba-home.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body pt-4 pb-2">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder text-center">Creaba</h5>
+                                <p class="card-text">Your choice of tea, flavor, toppings, milk (or alternative), sugar/sweatener, and ice cream flavor on the side.</p>
+                            </div>
+                            <!-- Product price-->
+                            <ul class="list-group list-group-flush my-2 text-center">
+                                <li class="list-group-item">Regular: <strong>$1.49</strong> - <strong>$4.49</strong></li>
+                                <li class="list-group-item">Large: $<strong>1.99</strong> - <strong>$4.99</strong></li>
+                            </ul>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-2 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-success mt-auto" href="#">Make your own!</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="images/strawberry-slush.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body pt-4 pb-2">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder text-center">Summer-time Slush</h5>
+                                <p class="card-text">Our seasonal boba punch! Your choice of flavor and topings served with ice. Now on sale!</p>
+                            </div>
+                            <!-- Product price-->
+                            <ul class="list-group list-group-flush my-2 text-center">
+                                <li class="list-group-item">
+                                    Regular:
+                                    <span class="text-muted text-decoration-line-through">$4.49</span>
+                                    <strong>$2.49</strong>
+                                </li>
+                                <li class="list-group-item">
+                                    Large:
+                                    <span class="text-muted text-decoration-line-through">$4.99</span>
+                                    <strong>$2.99</strong>
+                                </li>
+                            </ul>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-2 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to Cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="images/pexels-rodnae-productions-6413700.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body pt-4 pb-2">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder text-center">Summer-time Crunch</h5>
+                                <p class="card-text">Our seasonal creamy goodness! Your choice of flavor and toppings served in a cone wafer. Now on sale!</p>
+                            </div>
+                            <!-- Product price-->
+                            <ul class="list-group list-group-flush my-2 text-center">
+                                <li class="list-group-item">
+                                    Regular:
+                                    <span class="text-muted text-decoration-line-through">$4.49</span>
+                                    <strong>$2.49</strong>
+                                </li>
+                                <li class="list-group-item">
+                                    Large:
+                                    <span class="text-muted text-decoration-line-through">$4.99</span>
+                                    <strong>$2.99</strong>
+                                </li>
+                            </ul>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-2 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to Cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="images/fruit-boba.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body pt-4 pb-2">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder text-center">Fru-T</h5>
+                                <p class="card-text">Boba tea, but with fruit! Your choice of tea, fruit, sugar/sweetener, and toppings.</p>
+                            </div>
+                            <!-- Product price-->
+                            <ul class="list-group list-group-flush my-2 text-center">
+                                <li class="list-group-item">Regular: <strong>$4.69</strong></li>
+                                <li class="list-group-item">Large: <strong>$5.19</strong></li>
+                            </ul>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-2 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to Cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="images/brown-boba.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body pt-4 pb-2">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder text-center">Creabuccino</h5>
+                                <p class="card-text">Our signature iced coffee boba blend! Your choice of additional toppings, milk (or alternative), sugar/sweetener, and cream.</p>
+                            </div>
+                            <!-- Product price-->
+                            <ul class="list-group list-group-flush my-2 text-center">
+                                <li class="list-group-item">Regular: <strong>$4.79</strong></li>
+                                <li class="list-group-item">Large: <strong>$5.29</strong></li>
+                            </ul>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-2 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to Cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="images/ice-cream2.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body pt-4 pb-2">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder text-center">Crea-Me</h5>
+                                <p class="card-text">Ice cream done your way. Your choice and mix of flavor, toppings, and cone!</p>
+                            </div>
+                            <!-- Product price-->
+                            <ul class="list-group list-group-flush my-2 text-center">
+                                <li class="list-group-item">Regular: <strong>$1.49</strong> - <strong>$4.49</strong></li>
+                                <li class="list-group-item">Large: <strong>$1.99</strong> - <strong>$4.99</strong></li>
+                            </ul>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-2 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to Cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="images/golden-zebra.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body pt-4 pb-2">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder text-center">Golden Zebra</h5>
+                                <p class="card-text">Our special lemon and honey ice cream with frosting resembling zebra stripes. Your choice of additional toppings.</p>
+                            </div>
+                            <!-- Product price-->
+                            <ul class="list-group list-group-flush my-2 text-center">
+                                <li class="list-group-item">Regular: <strong>$4.69</strong></li>
+                                <li class="list-group-item">Large: <strong>$5.19</strong></li>
+                            </ul>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-2 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to Cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col">
+                        <h2>Flavors</h2>
+                    </div>
+                    <div class="col justify-content-end text-end">
+                        <a href="checkout.html" class="btn btn-primary">Checkout</a>
+                    </div>
+                </div>
+                <div class="flavor-cards row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 row-cols-xxxl-5 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100 text-bg-dark">
+                            <img src="images/pexels-ave-calvar-martinez-6944172.jpg" class="card-img" alt="..." />
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Strawberry</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100 text-bg-dark">
+                            <img src="images/pexels-ruth-currie-918643.jpg" class="card-img" alt="..." />
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Mango</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100 text-bg-dark">
+                            <img src="images/pexels-couleur-2316466.jpg" class="card-img" alt="..." />
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Banana</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100 text-bg-dark">
+                            <img src="images/taro-root-ga25dbadac_640.jpg" class="card-img" alt="..." />
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Taro</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100 text-bg-dark">
+                            <img src="images/pexels-eva-bronzini-5740647.jpg" class="card-img" alt="..." />
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Brown Sugar</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100 text-bg-dark">
+                            <img src="images/tetiana-bykovets-H22N-9s8AUw-unsplash.jpg" class="card-img" alt="..." />
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Chocolate</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100 text-bg-dark">
+                            <img src="images/pexels-sittisak-c-1739347.jpg" class="card-img" alt="..." />
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Vanilla</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="row my-4">
+                    <div class="col">
+                        <h2>Toppings</h2>
+                    </div>
+                    <div class="col justify-content-end text-end">
+                        <a href="checkout.html" class="btn btn-primary">Checkout</a>
+                    </div>
+                </div>
+                <div class="topping-cards row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 row-cols-xxxl-5 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100 text-bg-dark">
+                            <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" class="card-img" alt="..." />
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Tapioca</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100 text-bg-dark">
+                            <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" class="card-img" alt="..." />
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Strawberry Jelly</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100 text-bg-dark">
+                            <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" class="card-img" alt="..." />
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Grape Jelly</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100 text-bg-dark">
+                            <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" class="card-img" alt="..." />
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Popping Mango</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100 text-bg-dark">
+                            <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" class="card-img" alt="..." />
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Popping Banana</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100 text-bg-dark">
+                            <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" class="card-img" alt="..." />
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Brown Sugar Jelly</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100 text-bg-dark">
+                            <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" class="card-img" alt="..." />
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Vanilla Chunks</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100 text-bg-dark">
+                            <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" class="card-img" alt="..." />
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Sprinkles</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100 text-bg-dark">
+                            <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" class="card-img" alt="..." />
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Cream</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+
+            <section class="container-fluid mx-0 py-5 bg-purple bg-gradient">
+                <div class="text-center justify-content-center align-items-md-center">
+                    <h2 class="mb-4">Ready to Checkout?</h2>
+                    <a href="checkout.html" class="btn btn-primary btn-outline-light fw-bold">Checkout</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="py-3 pt-5 my-4 bg-light mb-0 mt-0 h-100" style="color-scheme: dark">
+            <div class="container">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link px-2 text-body-secondary">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link px-2 text-body-secondary">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#faq" class="nav-link px-2 text-body-secondary">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#about" class="nav-link px-2 text-body-secondary">About</a>
+                    </li>
+                </ul>
+                <p class="text-center text-body-secondary">&copy; 2023 Buzzbyte Development</p>
+            </div>
+        </footer>
+
+        <script src="/dist/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

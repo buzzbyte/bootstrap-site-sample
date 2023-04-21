@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Checkout Web Order - Creaba</title>
+        <link rel="stylesheet" href="/dist/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body class="bg-light">
+        <div class="bg-purple bg-gradient pb-lg-4">
+            <header>
+                <nav class="navbar navbar-dark navbar-expand-lg bg-transparent">
+                    <div class="container">
+                        <a class="navbar-brand" href="index.html">Creaba</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse d-lg-flex" id="navbarSupportedContent">
+                            <ul class="navbar-nav col mb-2 mb-lg-0 justify-content-lg-center">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="products.html">Products</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html#about">About</a>
+                                </li>
+                            </ul>
+                            <div class="d-grid me-auto gap-2 d-lg-flex">
+                                <a class="navbar-btn btn btn-outline-light" href="login.html">Login</a>
+                                <a class="navbar-btn btn btn-primary btn-outline-light" href="register.html">
+                                    <strong>Sign Up</strong>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <main class="bg-light-mobile">
+                <div class="container-fluid container-lg p-md-5 rounded-4 my-lg-4 bg-light text-dark">
+                    <form class="needs-validation" novalidate>
+                        <div class="py-3 pt-md-0 m-0">
+                            <h1 class="h2 mb-4">Sign Up for a Free Account</h1>
+                            <p class="lead">With a free Creaba account, you have access to customer rewards and discounts for all of our products. Join now!</p>
+                            <p>Already have an account? <a href="login.html" class="text-decoration-none">Login</a></p>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" required placeholder="Jon Smith" />
+                            <label for="floatingInput">Full Name</label>
+                            <div class="invalid-feedback">Please enter your name.</div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" required placeholder="name@example.com" />
+                            <label for="floatingInput">Email address</label>
+                            <div class="invalid-feedback">Please enter a valid email address.</div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="floatingPassword" required placeholder="Password" />
+                            <label for="floatingPassword">Password</label>
+                            <div class="invalid-feedback">Please enter a strong password.</div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="floatingPassword" required placeholder="Password" />
+                            <label for="floatingPassword">Confirm Password</label>
+                            <div class="invalid-feedback">Please confirm your password.</div>
+                        </div>
+
+                        <div class="mb-4">
+                            <p class="lead">How did you hear about us?</p>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="referrerRadio" id="news-referrer" />
+                                <label class="form-check-label" for="news-referrer"> News articles </label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="referrerRadio" id="ads-referrer" />
+                                <label class="form-check-label" for="ads-referrer"> Online Advertisements </label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="referrerRadio" id="tv-referrer" />
+                                <label class="form-check-label" for="tv-referrer"> TV Commercials </label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="referrerRadio" id="sponsor-referrer" />
+                                <label class="form-check-label" for="sponsor-referrer"> Sponsorships </label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="referrerRadio" id="social-referrer" />
+                                <label class="form-check-label" for="social-referrer"> Word of mouth / Product packaging </label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="referrerRadio" id="other-referrer" />
+                                <label class="form-check-label" for="other-referrer"> Other </label>
+                            </div>
+                        </div>
+
+                        <div class="checkbox mx-2 mb-3">
+                            <input id="tos-check" type="checkbox" class="me-2" value="remember-me" style="transform: scale(1.3)" required />
+                            <label for="tos-check"> I agree to the <a href="#" class="text-decoration-none">Terms of Service</a> </label>
+                            <div class="invalid-feedback">You must agree to the Terms of Service to create an account.</div>
+                        </div>
+                        <button class="w-100 btn btn-lg btn-primary" type="submit">Sign Up</button>
+                    </form>
+                </div>
+            </main>
+        </div>
+
+        <footer class="py-3 pt-5 my-4 bg-light mb-0 mt-0" style="color-scheme: dark">
+            <div class="container">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link px-2 text-body-secondary">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link px-2 text-body-secondary">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#faq" class="nav-link px-2 text-body-secondary">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#about" class="nav-link px-2 text-body-secondary">About</a>
+                    </li>
+                </ul>
+                <p class="text-center text-body-secondary">&copy; 2023 Buzzbyte Development</p>
+            </div>
+        </footer>
+
+        <script src="/dist/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
