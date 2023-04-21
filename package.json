@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "symlink-dir ./node_modules/bootstrap/dist ./dist/bootstrap",
-    "dev": "reload -b",
+    "dev": "reload -b -n 127.0.0.1",
     "start": "sirv --dev"
   },
   "keywords": [],
