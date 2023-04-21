@@ -2,9 +2,41 @@
     --bs-primary: var(--bs-orange);
 }
 
+a {
+    text-decoration: none;
+}
+
+.home-bg {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/boba-home.png");
+    height: 500px;
+}
+
 .bg-purple {
     background-color: var(--bs-purple);
     color: var(--bs-white)
+}
+
+.bg-light-mobile {
+    background: rgba(var(--bs-light-rgb),1);
+}
+
+.menu-cards .card-img-top,
+.topping-cards .card-img {
+    aspect-ratio: 450 / 300;
+    object-fit: cover;
+}
+
+.flavor-cards .card-img {
+    aspect-ratio: 450 / 400;
+    object-fit: cover;
+}
+
+.flavor-cards .card-img-overlay,
+.topping-cards .card-img-overlay {
+    background-color: rgba(var(--bs-dark-rgb),0.5);
 }
 
 #landing-hero1 {
@@ -22,5 +54,9 @@
 @media (min-width: 992px) {
     #landing-hero1 {
         background-position: right bottom;
+    }
+
+    .bg-light-mobile {
+        background: transparent;
     }
 }
